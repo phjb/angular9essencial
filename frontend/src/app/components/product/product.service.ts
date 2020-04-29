@@ -11,7 +11,7 @@ import { Observable } from 'rxjs';
 export class ProductService {
 
   baseUrl = 'http://localhost:3001/products';
-  constructor(private snackBar: MatSnackBar, private httpClient:HttpClient) { }
+  constructor(private snackBar: MatSnackBar, private httpClient: HttpClient) { }
 
   showMessage(msg: string): void {
     this.snackBar.open(msg, 'X', {
@@ -21,11 +21,26 @@ export class ProductService {
     });
   }
 
-  create(product:Product):Observable<Product>{
-    return this.httpClient.post<Product>(this.baseUrl,product);
+  create(product: Product): Observable<Product> {
+    return this.httpClient.post<Product>(this.baseUrl, product);
   }
-  read():Observable<Product[]>{
+  read(): Observable<Product[]> {
     return this.httpClient.get<Product[]>(this.baseUrl);
+  }
+
+  readById(id: string): Observable<Product> {
+    const url = `${this.baseUrl}/${id}`;
+    return this.httpClient.get<Product>(url);
+  }
+
+  update(product:Product):Observable<Product>{
+    const url = `${this.baseUrl}/${product.id}`;
+    return this.httpClient.put<Product>(url,product);
+  }
+
+  delete(id: number):Observable<Product>{
+    const url = `${this.baseUrl}/${id}`;
+    return this.httpClient.delete<Product>(url);
   }
 
 }
