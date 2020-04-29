@@ -1,3 +1,7 @@
+.container{
+    background-color: #FFF;
+}
+
 .sidenav{
     background-color: #3F51B5;
     width: 200px;
@@ -14,4 +18,5 @@
 .content{
     padding: 16px;
     background-color: #FFF;
+    margin-bottom: 70px;
 }
