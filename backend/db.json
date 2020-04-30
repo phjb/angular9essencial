@@ -1,11 +1,6 @@
 {
   "products": [
     {
-      "id": 1,
-      "name": "Canea BIC preta",
-      "price": "5.99"
-    },
-    {
       "id": 2,
       "name": "Notebook Mac Pro",
       "price": 1200.89
@@ -24,6 +19,11 @@
       "name": "Monitor",
       "price": "320.43",
       "id": 5
+    },
+    {
+      "name": "Caneta BIC Vermelha",
+      "price": "2.58",
+      "id": 6
     }
   ]
 }

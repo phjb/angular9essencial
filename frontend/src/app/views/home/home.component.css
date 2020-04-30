@@ -1,3 +1,9 @@
+.home{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
 .home .title{
     font-size: 3rem;
     font-weight: 300;
@@ -10,5 +16,5 @@
 
 .banner{
     max-width: 100%;
-    
+
 }

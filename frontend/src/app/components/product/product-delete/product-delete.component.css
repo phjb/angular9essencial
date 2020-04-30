@@ -1,0 +1,8 @@
+.card {
+  max-width: 40%;
+}
+.item {
+  display: flex;
+  flex-direction: row;
+  padding-right: 1rem;
+}
