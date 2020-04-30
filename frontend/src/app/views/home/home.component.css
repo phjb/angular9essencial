@@ -1,20 +1,21 @@
-.home{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
+.home {
+    padding-top: 6rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
 }
-.home .title{
-    font-size: 3rem;
-    font-weight: 300;
-    line-height: 1.2;
-}
-
-.home .subtitle{
-    font-size: 1.1rem;
+.home .title {
+  font-size: 6rem;
+  font-weight: 300;
+  line-height: 1.2;
 }
 
-.banner{
-    max-width: 100%;
+.home .subtitle {
+  font-size: 1.5rem;
+}
 
+.banner {
+
+  max-width: 50vw;
 }
