@@ -13,4 +13,4 @@
 ###
 ###
 
- ![](/frontend/src/assets/img/face-notebook.png)
+ ![](/frontend/src/assets/img/face-notebook_300x292.jpg)
